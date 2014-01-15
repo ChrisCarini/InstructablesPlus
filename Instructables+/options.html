@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+<head> 
+<title>Instructables+ - Options</title> 
+<meta http-equiv=refresh content=3600> 
+<script src="options_js.js"></script>
+<style type="text/css">
+body {
+	background-color: #ffffff;
+	text-align:left;
+	padding: 0px 0px 0px 0px;
+}
+ 
+/*** Essential Code for Columns ***/
+#wrapper {
+	background-color: #ffffff;
+	width: 450px;
+	border: 1px solid Black;
+	margin: 2px auto 2px auto;
+	overflow: hidden;
+}
+#header {
+	background-color: #ffffff;
+	width: 300px;
+	height: 110px;
+	margin: 2px auto 2px auto;
+	background-image: url(header.png);
+}
+#container {
+	width: 100%;
+	background-color: #ffffff;
+	float: left;
+	margin-right: -400px;
+}
+#content {
+	background-color: #ffffff;
+	margin-right: 400px;
+	padding: 2px 2px 2px 2px;
+	padding-bottom: 20010px;  /* X + padding-bottom */
+	margin-bottom: -20000px;  /* X */
+}
+.last {
+	margin-bottom: 0;
+}
+.clearing {
+	height: 0;
+	clear: both;
+}
+ 
+/*** For Looks ***/
+body, input, select, tr, td, ul, ol, li {
+	FONT-SIZE: 11px;
+	COLOR: black;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-DECORATION: none;
+}
+.onmouseover {
+	font-size: 12px;
+	color: #FFFFCC; /* original color was FFBD00 */
+	text-decoration: none;
+}
+.onmouseout {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+ 
+#pagetitle{
+	margin: 5px 0px 0px 5px;
+	font-size: 14px;
+	color: #384675;
+	font-weight: bold;
+}
+.maintitle{
+	font-size: 13px;
+	font-weight: bold;
+}
+.sbutton {
+	background-color: #FFBD00;
+	font-weight: bold;
+	text-decoration: none;
+}
+.title{
+	font-size: 12px;
+	font-weight: bold;
+}
+.underline{
+	font-weight: bold;
+	text-decoration: underline;
+} 
+ 
+ 
+a.header:link {color:#000000; text-decoration:none; font-weight:bold;}
+a.header:visited {color:#000000; text-decoration:none; font-weight:bold;}
+a.header:hover {color:#FFFFCC; text-decoration:none; font-weight:bold;}
+a.header:active {color:#000000; text-decoration:none; font-weight:bold;}
+a.footer:link {color:#c0c0c0; text-decoration:none; font-weight:bold;}
+a.footer:visited {color:#c0c0c0; text-decoration:none; font-weight:bold;}
+a.footer:hover {color:#c0c0c0; text-decoration:none; font-weight:bold;}
+a.footer:active {color:#c0c0c0; text-decoration:none; font-weight:bold;}
+a.link:link {color:blue; text-decoration:none; font-size:11px;}
+a.link:visited {color:blue; text-decoration:none; font-size:11px;}
+a.link:hover {color:#4E4E4E; text-decoration:none; font-size:11px;}
+a.link:active {color:blue; text-decoration:none; font-size:11px;}
+
+.status{
+	text-align:center;
+	vertical-align:top;
+}
+
+.statusGood{
+	color:#0C0;
+	text-align:center;
+	vertical-align:top;
+}
+
+</style> 
+</head> 
+<body>
+    <div id="header"></div>
+    <div id="wrapper">
+        <table id="maintable" name="maintable" cellspacing="2" cellpadding="2" border="0">
+            <tr>
+                <td style="width:450px;vertical-align:top;">
+                <!--- Main Box START --->
+                <div style="width:450px;">
+                    <table id="optiontable" name="optiontable" cellspacing="2" cellpadding="2" border="0" style="width:450px;text-align:left;margin: 2px auto 2px auto;">
+                        <tr>
+                            <td>
+                                <table id="optiontable2" name="optiontable2" cellspacing="2" cellpadding="2" border="0" style="text-align:center;margin: auto auto auto auto;">
+                                    <tr><td><p></p><br /></td></tr>
+                                    <tr>
+                                        <td style="text-align: right;font-weight:bold;width:50%;">Automatically Show All Steps?:</td>
+                                        <td style="width:50%;">
+                                            <input type="radio" name="showsteps" value="Yes">Yes | <input type="radio" name="showsteps" value="No" checked> No
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align:center;vertical-align:top;">
+                                            <button class="sbutton" id="saveButton">Save</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td colspan="2"></td></tr>
+                    </table>
+                    <div name="status" id="status"></div>
+                </div>
+                <!--- Main Box END --->
+				<div align="center">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="TNCL5K7SF5Z2C">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				</div>
+                <div style="text-align:center;">
+                    <br/>
+                    <div id="timesUsed"></div>
+                    <br />
+                </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
